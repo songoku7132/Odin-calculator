@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="calculator.js" defer></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="top">
+                <div class="title">
+                    <h1 class="name">Calculator</h1>
+                </div>
+                <div class="display">
+                    <div id="content"></div>
+                </div>
+            </div>
+            <div class="keyboardContainer">
+                <div class="keyboard">
+                    <button class="button" onclick="addDigit('7')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">7</button>
+                    <button class="button" onclick="addDigit('8')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">8</button>
+                    <button class="button" onclick="addDigit('9')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">9</button>
+                    <button class="button" onclick="equalsAll()" onmouseover="bigButton(this)" onmouseout="normalButton(this)">=</button>
+                    <button class="button" onclick="clearAll()" onmouseover="bigButton(this)" onmouseout="normalButton(this)">C</button>
+                    <button class="button" onclick="addDigit('4')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">4</button>
+                    <button class="button" onclick="addDigit('5')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">5</button>
+                    <button class="button" onclick="addDigit('6')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">6</button>
+                    <button class="button" onclick="displayValue('+')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">+</button>
+                    <button class="button" onclick="displayValue('-')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">-</button>
+                    <button class="button" onclick="addDigit('1')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">1</button>
+                    <button class="button" onclick="addDigit('2')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">2</button>
+                    <button class="button" onclick="addDigit('3')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">3</button>
+                    <button class="button" onclick="displayValue('*')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">*</button>
+                    <button class="button" onclick="displayValue('/')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">/</button>
+                    <button class="button" onclick="addDigit('0')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">0</button>
+                    <button class="button" onclick="addDigit('00')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">00</button>
+                    <button class="button" onclick="addDigit('.')" onmouseover="bigButton(this)" onmouseout="normalButton(this)">.</button>
+                    <button class="button"></button>
+                    <button class="button"></button>
+                </div>
+            </div>
+        </div>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+    </body>
+</html>
